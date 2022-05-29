@@ -561,7 +561,7 @@ main {
 .footer__link {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #23283e;
+  color: var(--clr-bg);
 }
 
 .scroll-top {
