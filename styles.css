@@ -183,6 +183,14 @@ button {
   background-color: var(--clr-bg-alt);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn--plain > img {
+  height: 33px;
+  margin-right: 10px;
 }
 
 .btn--plain:hover {
@@ -263,66 +271,6 @@ button {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   transition: 2s;
-}
-
-/* scrollfade */
-.scrollFade {
-  opacity: 1;
-  pointer-events: all;
-}
-.scrollFade--hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-.scrollFade--visible {
-  opacity: 1;
-  pointer-events: all;
-}
-.scrollFade--animate {
-  transition: opacity 1.5s ease-in-out;
-}
-
-/*==== FADE IN UP ===*/
-.fadeInUp {
-  -webkit-animation-duration: 1.4s;
-  animation-duration: 1.4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 
 .center {
@@ -429,15 +377,18 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
+  /* grid-template-columns: repeat(auto-fit, minmax(18em, 1fr)); */
+  grid-gap: 5em;
+  padding-top: 2em;
 }
 
 .project {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
-  box-shadow: var(--shadow);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transition: transform 0.2s linear;
 }
 
@@ -473,7 +424,7 @@ main {
 }
 
 .skills__list {
-  max-width: 450px;
+  max-width: 550px;
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -536,6 +487,68 @@ main {
     transform: translate3d(85px, 0, 0);
   }
 }
+
+/* scrollfade */
+.scrollFade {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.scrollFade--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--animate {
+  transition: opacity 1.5s ease-in-out;
+}
+
+/*==== FADE IN UP ===*/
+.fadeInUp {
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
@@ -553,7 +566,6 @@ main {
 .footer {
   padding: 2em 0;
   padding-bottom: 2.5em;
-  /* margin-top: 1.5em; */
   text-align: center;
   background-color: #007fff;
 }
@@ -633,7 +645,6 @@ main {
 
   .footer {
     padding: 2em;
-    /* margin-top: 3em; */
   }
 
   .scroll-container {

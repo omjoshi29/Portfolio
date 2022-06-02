@@ -46,6 +46,7 @@ const displayList = () => {
 
 btnHamburger.addEventListener("click", displayList);
 
+//Animations
 const scrollUp = () => {
   const btnScrollTop = document.querySelector(".scroll-top");
 
@@ -92,3 +93,31 @@ window.addEventListener("resize", scrollFade);
 document.addEventListener("DOMContentLoaded", function () {
   scrollFade();
 });
+
+//Slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlidesOb");
+  var y = document.getElementsByClassName("mySlidesBw");
+  var z = document.getElementsByClassName("mySlidesFm");
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    y[i].style.display = "none";
+    z[i].style.display = "none";
+  }
+
+  myIndex++;
+
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+
+  x[myIndex - 1].style.display = "block";
+  y[myIndex - 1].style.display = "block";
+  z[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
