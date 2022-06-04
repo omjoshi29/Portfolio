@@ -4,6 +4,27 @@
 src="https://img.shields.io/badge/-omjoshi.com-3423A6?style=flat&logo=Google-Chrome&logoColor=white"
 alt="omkar" height="30"/></a></>
   
+<h2 align="left">About:</h2>
+<p align="left">I'm a dedicated and efficient aspiring full-stack web developer with a specialization in MERN stack. Seeking to enhance and utilize my knowledge and skills for the best of the organization.</p>
+<p>You can see my Resume
+  <a href="https://drive.google.com/file/d/1FEe6vmbjG10HxWzw0BeYFx58bfKkGTlZ/view?usp=sharing" target="blank">here</a>.
+</p>
+
+<h2 align="left">Projects:</h2>
+<p align="left">
+  (1) Inspired from orbitz.com: 
+[ <a href="https://bit.ly/3726sTD" target="blank">Code</a> ]
+[ <a href="https://elegant-agnesi-f6525b.netlify.app/" target="blank">Live</a> ]
+  
+  (2) Inspired from buywow.in: 
+[ <a href="https://bit.ly/3NQGvqR" target="blank">Code</a> ]
+[ <a href="https://dazzling-horse-5169fb.netlify.app/" target="blank">Live</a> ]
+  
+  (3) Inspired from fitmeals.co.in: 
+[ <a href="https://bit.ly/3NrLIV8" target="blank">Code</a> ]
+[ <a href="https://flourishing-brigadeiros-066ec5.netlify.app/" target="blank">Live</a> ]
+</p>
+
 <div>
 <h2 align="left">Skills & Frameworks:</h2>
 <h3>Front-End:</h3>
@@ -42,7 +63,7 @@ alt="omkar" height="30"/></a></>
   
   <div>
   <samp>
-    <h3 align="left">You Can Reach Me By:</h3>
+    <h2 align="left">You Can Reach Me By:</h2>
     <p align="left">
       <br/>
       <a href="https://www.linkedin.com/in/omkar-joshi-969865168/" target="blank"><img align="center"
