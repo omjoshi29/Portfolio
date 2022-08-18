@@ -28,6 +28,7 @@ body {
 
 .light {
   --clr-bg: #fcfcfc;
+  --nav-bg: #fcfcfcc6;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
@@ -37,6 +38,7 @@ body {
 
 .dark {
   --clr-bg: #23283e;
+  --nav-bg: #23283ec6;
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
@@ -95,6 +97,16 @@ button {
 @media (max-width: 900px) {
   h1 {
     font-size: 2.6rem;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -288,6 +300,10 @@ button {
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: linear-gradient(var(--nav-bg), var(--nav-bg));
 }
 
 main {
@@ -381,10 +397,10 @@ main {
 }
 
 .projects__grid {
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   grid-gap: 5em;
   padding-top: 2em;
 }
@@ -392,9 +408,24 @@ main {
 .project {
   padding: 2em;
   margin: 0 auto;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   transition: transform 0.2s linear;
+}
+
+.w3-content {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black
+}
+
+.w3-content>img {
+  height: 100%;
+  width: 100%;
 }
 
 .projectImg {
@@ -402,9 +433,14 @@ main {
   margin-bottom: 1.5em;
 }
 
-.project:hover {
-  transform: translateY(-7px);
+.project-info {
+  text-align: left;
 }
+
+/* .project:hover .project-info>h3 {
+  transform: translateY(-7px);
+  color: #007fff;
+} */
 
 .project__description {
   margin-top: 1em;
@@ -413,19 +449,19 @@ main {
 .project__stack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   margin: 1.2em 0;
 }
 
 .project__stack-item {
-  margin: 0.5em;
+  margin-right: 0.5em;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--clr-fg-alt);
 }
 
 .project .link--icon {
-  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .skills__list {
@@ -578,6 +614,10 @@ main {
   h1 {
     font-size: 24px;
   }
+
+  .project {
+    flex-direction: column;
+  }
 }
 
 .footer {
@@ -618,6 +658,16 @@ main {
 
   .section {
     margin-top: 4em;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav__list {
