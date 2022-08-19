@@ -102,12 +102,6 @@ button {
   .project {
     flex-direction: column;
   }
-
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /*===================
@@ -249,6 +243,10 @@ button {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
+#myPhoto:hover {
+  box-shadow: rgba(0, 157, 255, 0.6) 0px 0px 0px 3px;
+}
+
 .myPhotoDiv {
   width: 100%;
   display: flex;
@@ -304,6 +302,8 @@ button {
   top: 0;
   z-index: 1;
   background: linear-gradient(var(--nav-bg), var(--nav-bg));
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 main {
@@ -417,6 +417,10 @@ main {
   transition: transform 0.2s linear;
 }
 
+.project:hover {
+  box-shadow: rgba(0, 157, 255, 0.6) 0px 0px 0px 3px;
+}
+
 .w3-content {
   height: 100%;
   width: 100%;
@@ -436,11 +440,6 @@ main {
 .project-info {
   text-align: left;
 }
-
-/* .project:hover .project-info>h3 {
-  transform: translateY(-7px);
-  color: #007fff;
-} */
 
 .project__description {
   margin-top: 1em;
@@ -487,6 +486,32 @@ main {
 
 #h2Contact {
   margin-top: 1.5em;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /* border-radius: 10px; */
+  background-color: var(--clr-bg);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* border-radius: 10px; */
+  background-color: var(--clr-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background: #38B6FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38B6FF, #38B6FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38B6FF, #38B6FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* waves */
@@ -618,13 +643,18 @@ main {
   .project {
     flex-direction: column;
   }
+
+  .about__desc {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
 }
 
 .footer {
-  padding: 2em 0;
-  padding-bottom: 2.5em;
+  padding: 1.6em 0;
+  /* padding-bottom: 1.6em; */
   text-align: center;
-  background-color: #007fff;
+  background-color: #38b6fff9;
 }
 
 .footer__link {
@@ -662,12 +692,6 @@ main {
 
   .project {
     flex-direction: column;
-  }
-
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .nav__list {
