@@ -7,7 +7,7 @@ alt="omkar" height="30"/></a></>
 <h2 align="left">About:</h2>
 <p align="left">I'm a dedicated and efficient aspiring full-stack web developer with a specialization in MERN stack. Seeking to enhance and utilize my knowledge and skills for the best of the organization.</p>
 <p>You can see my Resume
-  <a href="https://drive.google.com/file/d/1FEe6vmbjG10HxWzw0BeYFx58bfKkGTlZ/view?usp=sharing" target="blank">here</a>.
+  <a href="https://drive.google.com/file/d/1m4kMELpSOM_3S72B-IXB5J98042QbE8Y/view?usp=sharing" target="blank">here</a>.
 </p>
 
 <h2 align="left">Projects:</h2>
