@@ -103,11 +103,19 @@ function carousel() {
   var x = document.getElementsByClassName("mySlidesOb");
   var y = document.getElementsByClassName("mySlidesBw");
   var z = document.getElementsByClassName("mySlidesFm");
+  var p = document.getElementsByClassName("mySlidesOm");
+  var q = document.getElementsByClassName("mySlidesTx");
+  var r = document.getElementsByClassName("mySlidesIk");
+  var s = document.getElementsByClassName("mySlidesGc");
 
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
     y[i].style.display = "none";
     z[i].style.display = "none";
+    p[i].style.display = "none";
+    q[i].style.display = "none";
+    r[i].style.display = "none";
+    s[i].style.display = "none";
   }
 
   myIndex++;
@@ -119,5 +127,9 @@ function carousel() {
   x[myIndex - 1].style.display = "block";
   y[myIndex - 1].style.display = "block";
   z[myIndex - 1].style.display = "block";
+  p[myIndex - 1].style.display = "block";
+  q[myIndex - 1].style.display = "block";
+  r[myIndex - 1].style.display = "block";
+  s[myIndex - 1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
